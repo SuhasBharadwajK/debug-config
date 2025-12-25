@@ -1,0 +1,21 @@
+[
+    {
+        "label": "Bench",
+        "adapter": "Debugpy",
+        "request": "launch",
+        "program": "$ZED_WORKTREE_ROOT/frappe/frappe/utils/bench_helper.py",
+        "python": "$ZED_WORKTREE_ROOT/../env/bin/python",
+        "cwd": "$ZED_WORKTREE_ROOT/../sites",
+        "args": [
+            "frappe",
+            "serve",
+            "--port",
+            "8000",
+            "--noreload"
+            // "--nothreading"
+        ],
+        "env": {
+            "DEV_SERVER": "1"
+        }
+    }
+]
